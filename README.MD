@@ -22,7 +22,7 @@ Here is my set of scripts and the configuration i use under Linux.
 
 # AVAILABLE SCRIPTS
 
-See above or lunch ./SCRIPTS/listTools.sh to get the list
+See above or launch ./SCRIPTS/listTools.sh to get the list
 
 
 # INSTALL
