@@ -14,7 +14,7 @@ envScriptFullPath=$installScriptParentDirFullPath/env.sh
 
 isInstalled=$(more $HOME/.bashrc | grep $envScriptFullPath)
 if [ "$isInstalled" == "" ]; then
-    # sourcing lai tool box
+    # sourcing linux tool box
     . $installScriptParentDirFullPath/env.sh
     # add to bashrc
     echo "" >> $HOME/.bashrc
