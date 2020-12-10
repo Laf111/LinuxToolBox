@@ -22,12 +22,15 @@ Here is my set of scripts i use under Linux.
 
 # AVAILABLE SCRIPTS
 
-**Launch ./SCRIPTS/listTools.sh to get the list**
+See above or lunch ./SCRIPTS/listTools.sh to get the list
+
 
 # INSTALL
 
 Launch install.sh
+
 It will add a line in your bashrc to source the tool box.
+
 
 # UNINSTALL
 
