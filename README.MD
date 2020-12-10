@@ -7,18 +7,18 @@ Here is my set of scripts i use under Linux.
 
 # ALIASES
 
-•	h='history' 
-•	mkdir='mkdir -pv' 
-•	meminfo : (see env.sh) get memory informations and the first 10 most demanding processes 
-•	cpuinfo='lscpu'
-•	cpr='cpr.sh' 
-•	cpl='cp -rL' 
-•	getAllMyProc='ps -eaf | grep -v "grep" | grep '$USER 
-•	getAllMyChildProc='ps -eaf | grep -v "grep" | grep '$USER' | grep '$$
-•	getChildProc='pgrep -l -P '$$
-•	size='sudo du -hs' ( !!! sudo users only !!!)
-•	rexplorer='sudo nautilus --no-desktop --browser' ( !!! sudo users only !!!)
-•	clear : (see env.sh) clear console screen 
+- h='history' 
+- mkdir='mkdir -pv' 
+- meminfo : (see env.sh) get memory informations and the first 10 most demanding processes 
+- cpuinfo='lscpu'
+- cpr='cpr.sh' 
+- cpl='cp -rL' 
+- getAllMyProc='ps -eaf | grep -v "grep" | grep '$USER 
+- getAllMyChildProc='ps -eaf | grep -v "grep" | grep '$USER' | grep '$$
+- getChildProc='pgrep -l -P '$$
+- size='sudo du -hs' ( !!! sudo users only !!!)
+- rexplorer='sudo nautilus --no-desktop --browser' ( !!! sudo users only !!!)
+- clear : (see env.sh) clear console screen 
 
 # AVAILABLE SCRIPTS
 
@@ -36,11 +36,17 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr =  1  : KO, files not match
+
 cr =  2  : KO, folders not match
+
 cr =  3  : KO, unexpected files found
+
 cr =  4  : KO, missing files found
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 clean.sh
@@ -54,7 +60,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 copyFilesTo.sh
@@ -70,6 +78,7 @@ WHERE :
  
 RETURN CODE :
 cr = 0  : OK
+
 cr < 50 : WARNINGS
 cr > 50 : ERRORS
 cr > 99 : invalid arguments 
@@ -105,6 +114,7 @@ WHERE :
  
 RETURN CODE : 
 cr =0  : exit successfully
+
 cr >0  : warnings happens
 cr >49 : errors happens
 cr >99 : error on given args
@@ -185,8 +195,11 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : non nroken links found
+
 cr = 1  : broken links founnd
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 findInFilesAndParseXml.sh
@@ -203,7 +216,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0     : OK
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 findInFiles.sh
@@ -221,7 +236,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 99 : invalid arguments 
+
  
 NOTES : 
    The string passed as arguments mustn't contain any reserved characters or they need to be escaped !
@@ -242,12 +259,19 @@ NOTES : in case of using '|' in xpath expression, only the first path is handle
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr =  1  : ERROR : final node name exist but xpath doesn't match
+
 cr =  2  : ERROR : final node name not found
+
 cr =  3  : ERROR : node not found
+
 cr = 11  : WARNING final node name exist but is empty
+
 cr = 12  : WARNING xpath expression match nothing
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 float.sh
@@ -260,6 +284,7 @@ where :
 Return code values :
 RETURN CODE : 
   cr =0  : exit successfully
+
   cr >0  : warnings happens
   cr >49 : errors happens
   cr >99 : error on given args
@@ -276,7 +301,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0     : OK
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 getMemPid.sh
@@ -290,7 +317,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 getPerf.sh
@@ -328,6 +357,7 @@ WHERE :
  
 RETURN CODE : 
 cr =0  : exit successfully
+
 cr >0  : warnings happens
 cr >49 : errors happens
 cr >99 : error on given args
@@ -344,6 +374,7 @@ WHERE :
  
 RETURN CODE : 
 cr =0  : exit successfully
+
 cr >0  : warnings happens
 cr >49 : errors happens
 cr >99 : error on given args
@@ -360,6 +391,7 @@ WHERE :
  
 RETURN CODE : 
 cr =0  : exit successfully
+
 cr >0  : warnings happens
 cr >49 : errors happens
 cr >99 : error on given args
@@ -376,6 +408,7 @@ WHERE :
  
 RETURN CODE : 
 cr =0  : exit successfully
+
 cr >0  : warnings happens
 cr >49 : errors happens
 cr >99 : error on given args
@@ -431,10 +464,15 @@ NOTES :
  Don't forget to use replaceLink.sh or replaceLinks.sh if you want to modify a file in pathTarget !!!
  
 cr = 0  : OK
+
 cr = 1  : warnings
+
 cr = 2  : broken links found
+
 cr = 3  : errors
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 linkPath.sh
@@ -454,10 +492,15 @@ NOTES :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : warnings
+
 cr = 2  : broken links found
+
 cr = 3  : errors
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 listSchemaXsdVersion.sh
@@ -471,6 +514,7 @@ WHERE :
  
 RETURN CODE : 
 cr =0  : exit successfully
+
 cr >0  : warnings happens
 cr >49 : errors happens
 cr >99 : error on given args
@@ -512,6 +556,7 @@ where :
 Return code values :
 RETURN CODE : 
   cr =0  : exit successfully
+
   cr >0  : warnings happens
   cr >49 : errors happens
   cr >99 : error on given args
@@ -570,8 +615,11 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr =  1  : error occurs
+
 cr = 99 : invalid arguments 
+
  
 -----------------------------------------------------------------------
 =======================================================================
@@ -587,9 +635,13 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : error when parsing pathRoot
+
 cr = 2  : broken links found
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 renameLinkWithTargetName.sh
@@ -603,7 +655,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr = -99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 renameTargetsWithLinksNames.sh
@@ -618,9 +672,13 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : error when parsing pathRoot
+
 cr = 2  : broken links found
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 renameTargetWithLinkName.sh
@@ -634,8 +692,10 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr <> 0  : KO
 cr = -99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 replaceInFiles.sh
@@ -653,8 +713,11 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr =  1  : error occurs
+
 cr = 99 : invalid arguments 
+
  
 EXAMPLE : replaceInFiles.sh $(pwd) "*.sh" "USAGE :\$0" "USAGE : \$0" 3
 -----------------------------------------------------------------------
@@ -670,7 +733,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr = -99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 replaceLinks.sh
@@ -685,9 +750,13 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : error when parsing pathRoot
+
 cr = 2  : broken links found
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 sortData.sh
@@ -703,7 +772,9 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 tracePerf.sh
@@ -734,9 +805,13 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : error when parsing linkPath
+
 cr = 2  : broken links found
+
 cr = 99 : invalid arguments 
+
  
 -----------------------------------------------------------------------
 =======================================================================
@@ -754,9 +829,13 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : error when parsing pathRoot
+
 cr = 2  : broken links found
+
 cr = 99 : invalid arguments 
+
  
 NOTES : 
    Strings passed as arguments mustn't contain any reserved characters or they need to be escaped !
@@ -775,10 +854,14 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : warnings
+
 cr = 2  : broken links found
+
 cr > 50 : errors
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 updateLinksWithRelativePath.sh
@@ -793,10 +876,15 @@ WHERE :
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : warnings
+
 cr = 2  : broken links found
+
 cr = 3  : errors
+
 cr = 99 : invalid arguments 
+
 -----------------------------------------------------------------------
 =======================================================================
 updatePath.sh
@@ -814,8 +902,11 @@ WHERE :
  
 RETURN CODE : 
 cr = 0   : OK
+
 cr =  1  : error occurs
+
 cr = 99 : invalid arguments 
+
  
 NOTES : 
    Don't forget to sudo this script if needed !!! 
@@ -836,8 +927,11 @@ Only files defining a valid XSD file in their XML header are updated !
  
 RETURN CODE : 
 cr = 0  : OK
+
 cr = 1  : WARNING at least one file is not associate to an xsd
+
 cr = 2  : WARNING at least one file is invalid regarding its xsd
+
 cr > 50  : ERROR
 cr > 100 : invalid arguments
 
@@ -854,6 +948,7 @@ where :
 Return code values :
 RETURN CODE : 
   cr =0  : exit successfully
+
   cr >0  : warnings happens
   cr >49 : errors happens
   cr >99 : error on given args
