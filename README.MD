@@ -23,3 +23,12 @@ Here is my set of scripts i use under Linux.
 # AVAILABLE SCRIPTS
 
 **Launch ./SCRIPTS/listTools.sh to get the list**
+
+# INSTALL
+
+Launch install.sh
+I will add a line in your bashrc to source the tool box.
+
+# UNINSTALL
+
+Remove the line in your bachrc under # sourcing linux tool box
