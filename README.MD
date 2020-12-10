@@ -1,4 +1,4 @@
-Here is my set of scripts i use under Linux.
+Here is my set of scripts and the configuration i use under Linux.
 
 
 #	PROMPT
