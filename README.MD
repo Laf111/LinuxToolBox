@@ -31,6 +31,8 @@ Launch install.sh
 
 It will add a line in your bashrc to source the tool box.
 
+Linux Tool Bos is added to your path so the scripts are available everywhere.
+
 
 # UNINSTALL
 
