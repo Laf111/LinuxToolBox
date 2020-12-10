@@ -27,7 +27,7 @@ Here is my set of scripts i use under Linux.
 # INSTALL
 
 Launch install.sh
-I will add a line in your bashrc to source the tool box.
+It will add a line in your bashrc to source the tool box.
 
 # UNINSTALL
 
