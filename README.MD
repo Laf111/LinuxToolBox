@@ -22,4 +22,4 @@ Here is my set of scripts i use under Linux.
 
 # AVAILABLE SCRIPTS
 
-**Launch listTools.sh to get the list**
+**Launch ./SCRIPTS/listTools.sh to get the list**
