@@ -1,31 +1,11 @@
-Here is my set of scripts i used under Linux.
+Here is my set of scripts i use under Linux.
 
-=======================================================================
-1.1.	PROMPT
-=======================================================================
 
-1.1.1.	PROMPT LINUX
+#	PROMPT
 
-Linux prompt is changed with : 
+![LinuxToolBox](LinuxToolBox.png)
 
-<[$USERNAME@$HOSTNAME]$PWD(pid=$$:cr=$?)>
-
-Whith :
-•	$USERNAME : variable d’environnement désignant l’utilisateur courant
-•	$HOSTNAME : variable d’environnement désignant la machine utilisée
-•	$PWD : répertoire parent 
-•	$$ : pid (identifiant du processus) courant
-•	$? : code retour de la dernière commande exécutée
-=======================================================================
-1.1.2.	3RD PARTY TOOLS
-  - nonReg (compare binary and ASCII/XML files)
-  - xmlReduce (flatter xml files)
-  - xml starlet 1.5.0
-  - XmlCheck (verif XSD)
-  - readBytesInBinaryFile
-
-=======================================================================
-1.1.3.	ALIASES
+# ALIASES
 
 •	h='history' 
 •	mkdir='mkdir -pv' 
@@ -40,10 +20,9 @@ Whith :
 •	rexplorer='sudo nautilus --no-desktop --browser' ( !!! sudo users only !!!)
 •	clear : (see env.sh) clear console screen 
 
-=======================================================================
-1.1.3.	AVAILABLE SCRIPTS
+# AVAILABLE SCRIPTS
 
-Launch listTools.sh to get the list bellow :
+**Launch listTools.sh to get the list bellow :**
 
 =======================================================================
 checkPathContent.sh
