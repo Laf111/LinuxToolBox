@@ -22,10 +22,9 @@ Here is my set of scripts i use under Linux.
 
 # AVAILABLE SCRIPTS
 
-**Launch listTools.sh to get the list bellow :**
+Launch listTools.sh to get the list bellow :
 
-=======================================================================
-checkPathContent.sh
+**checkPathContent.sh**
 
 This script check a path'files and folders names using filters on file and regulars expressions defined in an optionnal external file given as 2nd argument.
 -----------------------------------------------------------------------
@@ -36,12 +35,12 @@ WHERE :
 - regExpFile   : full path to the file defining files patterns (optional)
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr =  1  : KO, files not match
-   cr =  2  : KO, folders not match
-   cr =  3  : KO, unexpected files found
-   cr =  4  : KO, missing files found
-   cr = 99 : invalid arguments 
+cr = 0   : OK
+cr =  1  : KO, files not match
+cr =  2  : KO, folders not match
+cr =  3  : KO, unexpected files found
+cr =  4  : KO, missing files found
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 clean.sh
@@ -54,8 +53,8 @@ WHERE :
 - workingDirPath : path of directory to be checked without final '/'
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 copyFilesTo.sh
@@ -70,10 +69,10 @@ WHERE :
 - targetDir  : targetDir Path
  
 RETURN CODE :
-   cr = 0  : OK
-   cr < 50 : WARNINGS
-   cr > 50 : ERRORS
-   cr > 99 : invalid arguments 
+cr = 0  : OK
+cr < 50 : WARNINGS
+cr > 50 : ERRORS
+cr > 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 cpr.sh
@@ -105,10 +104,10 @@ WHERE :
 - t2 : second date in format %Y-%m-%dT%H:%M:%S.%N quoted with "
  
 RETURN CODE : 
-   cr =0  : exit successfully
-   cr >0  : warnings happens
-   cr >49 : errors happens
-   cr >99 : error on given args
+cr =0  : exit successfully
+cr >0  : warnings happens
+cr >49 : errors happens
+cr >99 : error on given args
 -----------------------------------------------------------------------
 =======================================================================
 diffFile.sh
@@ -185,9 +184,9 @@ WHERE :
 - -d : delete results (optionnal)
  
 RETURN CODE : 
-   cr = 0  : non nroken links found
-   cr = 1  : broken links founnd
-   cr = 99 : invalid arguments 
+cr = 0  : non nroken links found
+cr = 1  : broken links founnd
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 findInFilesAndParseXml.sh
@@ -203,8 +202,8 @@ WHERE :
 - depth (optionnal) : searching depth 
  
 RETURN CODE : 
-   cr = 0     : OK
-   cr = 99 : invalid arguments 
+cr = 0     : OK
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 findInFiles.sh
@@ -221,8 +220,8 @@ WHERE :
 - -xml (optionnal) : parsing xml file instead of grep
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 99 : invalid arguments 
  
 NOTES : 
    The string passed as arguments mustn't contain any reserved characters or they need to be escaped !
@@ -242,13 +241,13 @@ NOTES : in case of using '|' in xpath expression, only the first path is handle
         it belongs to you to split your xpath expression
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr =  1  : ERROR : final node name exist but xpath doesn't match
-   cr =  2  : ERROR : final node name not found
-   cr =  3  : ERROR : node not found
-   cr = 11  : WARNING final node name exist but is empty
-   cr = 12  : WARNING xpath expression match nothing
-   cr = 99 : invalid arguments 
+cr = 0   : OK
+cr =  1  : ERROR : final node name exist but xpath doesn't match
+cr =  2  : ERROR : final node name not found
+cr =  3  : ERROR : node not found
+cr = 11  : WARNING final node name exist but is empty
+cr = 12  : WARNING xpath expression match nothing
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 float.sh
@@ -276,8 +275,8 @@ WHERE :
 - pathRoot : path of directory to be scanned
  
 RETURN CODE : 
-   cr = 0     : OK
-   cr = 99 : invalid arguments 
+cr = 0     : OK
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 getMemPid.sh
@@ -290,8 +289,8 @@ WHERE :
 - pid : pid of the process
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 getPerf.sh
@@ -328,10 +327,10 @@ WHERE :
 - pid : pid of the process
  
 RETURN CODE : 
-   cr =0  : exit successfully
-   cr >0  : warnings happens
-   cr >49 : errors happens
-   cr >99 : error on given args
+cr =0  : exit successfully
+cr >0  : warnings happens
+cr >49 : errors happens
+cr >99 : error on given args
 -----------------------------------------------------------------------
 =======================================================================
 j2000_obtRef2str.sh
@@ -344,10 +343,10 @@ WHERE :
 - t : timestamp in seconds as a float
  
 RETURN CODE : 
-   cr =0  : exit successfully
-   cr >0  : warnings happens
-   cr >49 : errors happens
-   cr >99 : error on given args
+cr =0  : exit successfully
+cr >0  : warnings happens
+cr >49 : errors happens
+cr >99 : error on given args
 -----------------------------------------------------------------------
 =======================================================================
 j2000_str2jjfrac.sh
@@ -360,10 +359,10 @@ WHERE :
 - t : date in format %Y-%m-%dT%H:%M:%S.%N quoted with "
  
 RETURN CODE : 
-   cr =0  : exit successfully
-   cr >0  : warnings happens
-   cr >49 : errors happens
-   cr >99 : error on given args
+cr =0  : exit successfully
+cr >0  : warnings happens
+cr >49 : errors happens
+cr >99 : error on given args
 -----------------------------------------------------------------------
 =======================================================================
 j2000_str2jj.sh
@@ -376,10 +375,10 @@ WHERE :
 - t : date in format %Y-%m-%dT%H:%M:%S.%N quoted with "
  
 RETURN CODE : 
-   cr =0  : exit successfully
-   cr >0  : warnings happens
-   cr >49 : errors happens
-   cr >99 : error on given args
+cr =0  : exit successfully
+cr >0  : warnings happens
+cr >49 : errors happens
+cr >99 : error on given args
 -----------------------------------------------------------------------
 =======================================================================
 killProcessMatchingPattern.sh
@@ -431,11 +430,11 @@ WHERE :
 NOTES : 
  Don't forget to use replaceLink.sh or replaceLinks.sh if you want to modify a file in pathTarget !!!
  
-   cr = 0  : OK
-   cr = 1  : warnings
-   cr = 2  : broken links found
-   cr = 3  : errors
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : warnings
+cr = 2  : broken links found
+cr = 3  : errors
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 linkPath.sh
@@ -454,11 +453,11 @@ NOTES :
  Don't forget to use replaceLink.sh or replaceLinks.sh if you want to modify a file in pathTarget !!!
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : warnings
-   cr = 2  : broken links found
-   cr = 3  : errors
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : warnings
+cr = 2  : broken links found
+cr = 3  : errors
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 listSchemaXsdVersion.sh
@@ -471,10 +470,10 @@ WHERE :
   - xsdDirPath   : path to the schema files directory
  
 RETURN CODE : 
-   cr =0  : exit successfully
-   cr >0  : warnings happens
-   cr >49 : errors happens
-   cr >99 : error on given args
+cr =0  : exit successfully
+cr >0  : warnings happens
+cr >49 : errors happens
+cr >99 : error on given args
 -----------------------------------------------------------------------
 given args : ()
 =======================================================================
@@ -570,9 +569,9 @@ WHERE :
 - depth (optionnal) : searching depth 
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr =  1  : error occurs
-   cr = 99 : invalid arguments 
+cr = 0   : OK
+cr =  1  : error occurs
+cr = 99 : invalid arguments 
  
 -----------------------------------------------------------------------
 =======================================================================
@@ -587,10 +586,10 @@ WHERE :
 - depth (optionnal) : searching depth 
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : error when parsing pathRoot
-   cr = 2  : broken links found
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : error when parsing pathRoot
+cr = 2  : broken links found
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 renameLinkWithTargetName.sh
@@ -603,8 +602,8 @@ WHERE :
 - linkPath    : path of the link
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr = -99 : invalid arguments 
+cr = 0   : OK
+cr = -99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 renameTargetsWithLinksNames.sh
@@ -618,10 +617,10 @@ WHERE :
 - depth (optionnal) : searching depth 
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : error when parsing pathRoot
-   cr = 2  : broken links found
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : error when parsing pathRoot
+cr = 2  : broken links found
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 renameTargetWithLinkName.sh
@@ -634,9 +633,9 @@ WHERE :
 - linkPath    : path of the link
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr <> 0  : KO
-   cr = -99 : invalid arguments 
+cr = 0   : OK
+cr <> 0  : KO
+cr = -99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 replaceInFiles.sh
@@ -653,9 +652,9 @@ WHERE :
 - depth (optionnal) : searching depth 
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr =  1  : error occurs
-   cr = 99 : invalid arguments 
+cr = 0   : OK
+cr =  1  : error occurs
+cr = 99 : invalid arguments 
  
 EXAMPLE : replaceInFiles.sh $(pwd) "*.sh" "USAGE :\$0" "USAGE : \$0" 3
 -----------------------------------------------------------------------
@@ -670,8 +669,8 @@ WHERE :
 - linkPath    : path of the link
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr = -99 : invalid arguments 
+cr = 0   : OK
+cr = -99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 replaceLinks.sh
@@ -685,10 +684,10 @@ WHERE :
 - depth (optionnal) : searching depth 
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : error when parsing pathRoot
-   cr = 2  : broken links found
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : error when parsing pathRoot
+cr = 2  : broken links found
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 sortData.sh
@@ -703,8 +702,8 @@ WHERE :
 - dirOut  : path of filtered directory 
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr = 99 : invalid arguments 
+cr = 0   : OK
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 tracePerf.sh
@@ -734,10 +733,10 @@ WHERE :
 - replacementPath : string surrounded by  that contain the replacement part of targeted paths
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : error when parsing linkPath
-   cr = 2  : broken links found
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : error when parsing linkPath
+cr = 2  : broken links found
+cr = 99 : invalid arguments 
  
 -----------------------------------------------------------------------
 =======================================================================
@@ -754,10 +753,10 @@ WHERE :
 - depth (optionnal) : searching depth
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : error when parsing pathRoot
-   cr = 2  : broken links found
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : error when parsing pathRoot
+cr = 2  : broken links found
+cr = 99 : invalid arguments 
  
 NOTES : 
    Strings passed as arguments mustn't contain any reserved characters or they need to be escaped !
@@ -775,11 +774,11 @@ WHERE :
 - depth (optionnal)    : searching depth
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : warnings
-   cr = 2  : broken links found
-   cr > 50 : errors
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : warnings
+cr = 2  : broken links found
+cr > 50 : errors
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 updateLinksWithRelativePath.sh
@@ -793,11 +792,11 @@ WHERE :
 - depth (optionnal)    : searching depth
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : warnings
-   cr = 2  : broken links found
-   cr = 3  : errors
-   cr = 99 : invalid arguments 
+cr = 0  : OK
+cr = 1  : warnings
+cr = 2  : broken links found
+cr = 3  : errors
+cr = 99 : invalid arguments 
 -----------------------------------------------------------------------
 =======================================================================
 updatePath.sh
@@ -814,9 +813,9 @@ WHERE :
 - depth (optionnal)             : searching depth
  
 RETURN CODE : 
-   cr = 0   : OK
-   cr =  1  : error occurs
-   cr = 99 : invalid arguments 
+cr = 0   : OK
+cr =  1  : error occurs
+cr = 99 : invalid arguments 
  
 NOTES : 
    Don't forget to sudo this script if needed !!! 
@@ -836,11 +835,11 @@ NOTES :
 Only files defining a valid XSD file in their XML header are updated !
  
 RETURN CODE : 
-   cr = 0  : OK
-   cr = 1  : WARNING at least one file is not associate to an xsd
-   cr = 2  : WARNING at least one file is invalid regarding its xsd
-   cr > 50  : ERROR
-   cr > 100 : invalid arguments
+cr = 0  : OK
+cr = 1  : WARNING at least one file is not associate to an xsd
+cr = 2  : WARNING at least one file is invalid regarding its xsd
+cr > 50  : ERROR
+cr > 100 : invalid arguments
 
 -----------------------------------------------------------------------
 =======================================================================
