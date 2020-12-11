@@ -40,7 +40,7 @@ using folder and so do not corrupt the source location if you create file in the
 
 **updateLink.sh and updateLinks.sh** : to change the target location of a link (broken or not) 
 
-**diffFile.sh and diffFolder.sh** : diff tools that can ignore lines/nodes in ASCII files (powerfull on XML files with the ability of ignoring nodes order)
+**diffFile.sh and diffFolder.sh** : diff tools that can ignore lines/nodes in ASCII files (powerfull on XML files with the ability of ignoring nodes order). You can customize the final tools to use to compare file upon the extension criterion.
 
 **checkPathContent.sh** : tool to validate a path (files and folder in) based on regular expression
 
