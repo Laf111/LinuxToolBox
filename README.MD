@@ -34,7 +34,7 @@ It search for final childs in the process tree, kill them from the softly to the
 **findInFiles.sh, replaceInfiles.sh, renameFiles.sh** : what every OS should have...
 
 **linkPath.sh and linkPathCreatingdirs.sh** : used to create links trees. The difference reside in  : for the last one, it re-creates the relative path 
-using folder and so do not corrupt the source location if you create file in there.
+using folder and so do not corrupt the source location if you create file in there (like you would if you use symlinks on folders themselves)
 
 **findBrokenLinks.sh replaceLink.sh and replaceLinks.sh** : detect broken links, replace link(s) with their target
 
