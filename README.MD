@@ -27,7 +27,7 @@ See above or launch **./SCRIPTS/listTools.sh** to get the list
 Most interesting scripts are : 
 
 **killProcessTree.sh** : kill a process tree (process and his subprocesses) "softly"
-It search for final childs in the process tree, kill them from the softly to the harder (kill -9) and treats the processes' stack backwardly.
+It searches for final children process tree, kill them from the softly to the harder (kill -9) and treats the processes' stack backwardly.
 
 **killProcessMatchingPattern.sh**
 
