@@ -102,10 +102,7 @@ for f in $fileList; do
         cr=$?
         if [ $cr -eq 0 ]; then
         
-            fnew=$f".new"
-            sed "s|$secureStringSrc|$secureReplacementStr|g" $f > $fnew
-            rm -rf $f
-            mv $fnew $f
+            sed -i -c "s|$secureStringSrc|$secureReplacementStr|g" $f
             echo " File updated : "$f
             nbTreatedFiles=$(($nbTreatedFiles+1))
             extension=${f##*"."}
